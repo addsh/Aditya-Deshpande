@@ -6,8 +6,8 @@
 \usepackage{parskip}
 \usepackage{setspace}
 
-\setstretch{1.02}
-\setlist[itemize]{leftmargin=*, noitemsep, topsep=1pt}
+\setstretch{0.95}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt}
 \pagestyle{empty}
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
@@ -23,59 +23,63 @@
 \begin{center}
     {\Large \textbf{Aditya Deshpande}} \\
     Bangalore / Bengaluru \\
-    \href{https://ls1.in/juzDB}{https://ls1.in/juzDB} \quad 
-    \href{mailto:aditya.deshpande0302@gmail.com}{aditya.deshpande0302@gmail.com} \quad 
+    \href{https://ls1.in/juzDB}{https://ls1.in/juzDB} \quad
+    \href{mailto:aditya.deshpande0302@gmail.com}{aditya.deshpande0302@gmail.com} \quad
     9325402814
 \end{center}
 
 \vspace{0.5em}
 
 \section*{Professional Summary}
-A results-driven DevOps and Cloud Infrastructure Engineer with 5+ years of progressive experience in designing, deploying, and maintaining secure, scalable systems on AWS. Proven track record in automation, monitoring, and compliance across high-growth product ecosystems. Demonstrated ability to lead cloud migrations, implement infrastructure-as-code, and reduce costs through intelligent architecture. Known for driving impactful change and enabling fast-moving engineering teams through technical excellence and leadership.
+A results driven DevOps and Cloud Infrastructure Engineer with 5+ years of experience designing, automating, and maintaining secure, scalable systems on AWS. Skilled in backend automation using Python, infrastructure-as-code development, and large-scale system optimization. Strong track record in site reliability, security hardening, and operational excellence through collaboration and technical depth.
 
-\section*{Skills}
-\textbf{Cloud Services:} AWS (EC2, RDS, CloudFormation, Lambda, S3, CodePipeline, System Manager) \\
-\textbf{Automation \& Monitoring:} Shell Scripting, Datadog, Jira \\
-\textbf{Languages:} Python, MySQL \\
-\textbf{Other Skills:} Debugging, Cloud Migration, Vendor Management, CXO Communication, Leadership
+\section*{Tech Stack}
+\textbf{Cloud \& Infrastructure:} AWS (EC2, RDS, S3, Lambda, CloudFormation, Systems Manager, CodePipeline), VPC design and private networking, Linux hardening, Infrastructure as Code (IaC) \\
+\textbf{DevOps & Automation:} CI/CD pipelines, zero-downtime / blue-green deployments, configuration management, SFTP/data workflows automated in Python, AI-assisted scripting and runbook automation for operational efficiency \\
+\textbf{Site Reliability:} Datadog, CloudWatch, log analysis, production dashboards and alerting, auto-scaling strategies, capacity planning, FinOps optimisation, disaster recovery and resiliency for mission-critical systems \\
+\textbf{Backend:} Python, Node.js, Shell scripting — API and job automation, data operations, secrets/config management, and backend integrations for microservices platforms\\
+\textbf{Security:}Security: SentinelOne EDR/XDR integration, threat triage & automated remediation; cloud misconfiguration fixes (IAM, VPC, storage), exposed secret rotation, XSS mitigation, vulnerability patching, and compliance-driven hardening aligned with RBI guidelines.\\
+
 
 \section*{Work Experience}
 
-\textbf{Credit Saison} \\
+\textbf{Credit Saison} \
 \textit{Software Engineer TL - DevOps} \hfill May 2023 – Present
 \begin{itemize}
-    \item Developed end-to-end AWS infrastructure for LMS using CloudFormation.
-    \item Improved scalability by isolating UI and API deployments.
-    \item Ensured security and compliance with RBI MD-ITF and UCB via IAC scanning and Kubernetes hardening.
-    \item Automated horizontal/vertical scaling during EOD via Lambda.
-    \item Automated DB maintenance and logs sharing via System Manager and shell scripting.
-    \item Migrated 5L loans to a new LMS architecture as per RBI compliance.
-    \item Deployed cost-efficient lower environments using parametric IaC conditions.
-    \item Led 20+ monitoring team; trained on AWS, Jira, Datadog; documented all support SOPs on Confluence.
-    \item Ubuntu 24.04 hardening script and implementation.
-    \item Maintained 15+ databases; executed temporary SQL fixes; supported dumps/restores.
-    \item Documented technical processes for institutional knowledge.
+    \item Developed end-to-end AWS infrastructure for the Loan Management System using CloudFormation, provisioning EC2, Load Balancers, Target Groups, listener rules, Route53 DNS records, and RDS with IaC best practices.
+    \item Re-architected LMS to scale under increasing loan volumes by decoupling UI and API workloads across independent compute layers, eliminating crossndependency downtime during feature deployments.
+    \item Resolved cloud misconfigurations, enforced IaC scanning, and supported Kubernetes security controls in alignment with RBI MD-ITF, SOC 2, ISO 27001, CIS Benchmarks and RBI UCB compliance standards using SentinalOne tool.
+    \item Implemented horizontal scaling via Auto Scaling Groups and scheduled vertical scaling (CPU/RAM) only during EOD batch workloads using Lambda automation, significantly reducing EC2 consumption throughout the day.
+    \item Automated repetitive operations such as DB maintenance, log delivery, and housekeeping using shell scripts, cron jobs, and AWS Systems Manager, reducing manual labor and operational noise.
+    \item Contributed to a major loan migration (100K+ loans) by architecting supporting infrastructure and assisting database teams with import, validation, and consistency checks.
+    \item Provisioned lower environments using parameterized IaC to mirror production architecture with cost optimized resources, enabling reliable regression testing before LMS releases.
+    \item Maintained production EKS clusters using PDBs, autoscaling, and rolling/surge deployments to ensure zero downtime; upgraded versions from 1.29 to 1.33.
+    \item Developed a Jira driven automation workflow to provision SFTP users on AWS Transfer Family using Node.js, automatically creating IAM roles, policies, public/private key pairs, and delivering credentials to requesters via SES integration.
+    \item Ubuntu 24.04 hardened by implementing handbook security controls via Ansible, created a compliant base image using Image Builder, and deployed 50+ microservices on the hardened OS.
+    \item Participated in the cost optimization initiative and delivered a 9\% reduction in overall AWS spend within a sprint by reviewing multiple environments, and strategized resource tagging coverage to enable departmental cost visibility.
+    \item Operated as DBA for 15+ RDS PostgreSQL databases across prod and non-prod, writing targeted SQL scripts to triage incidents, unblock development, and support data dumps/restorations.
+    \item Led and mentored a 20+ member 24×7 external monitoring team; conducted KT sessions on AWS console usage, Datadog dashboards, and Jira workflows; authored SOPs and operational runbooks in Confluence.
+    \item Documented end-to-end processes, escalation flows, and environment standards to build repeatable institutional knowledge on Confluence.
 \end{itemize}
+
 
 \textbf{Amazon} \\
 \textit{Cloud Operations Associate (App Services)} \hfill Apr 2021 – May 2023
 \begin{itemize}
-    \item Supported global developer ecosystem for Amazon Appstore, managing infrastructure-level troubleshooting for hosted app services.
-    \item Used AWS Console extensively for environment checks, log tracing, EC2/CloudWatch queries, and S3 bucket review.
-    \item Maintained internal MySQL databases to support app status, deployment records, and tracking.
-    \item Collaborated with policy and QA teams to ensure performance and content compliance across 10+ platforms (Fire TV, Mobile, Tablet).
-    \item Created lightweight scripts to automate developer data delivery and metric validation; regularly raised performance tuning requests.
-    \item Led efforts in uptime analysis, alert tracking, and dashboard improvement using JIRA and AWS-native tools.
+    \item Supported Amazon Appstore’s developer ecosystem for US/UK/IN regions, resolving infrastructure-level issues for hosted apps.
+    \item Used AWS Console extensively for environment validation, log tracing, EC2/CloudWatch metrics, and S3 operations.
+    \item Developed lightweight automation scripts in Python and Shell to streamline data delivery, deployment status checks, and report generation.
+    \item Maintained MySQL databases used for tracking developer submissions, app metrics, and deployment records.
+    \item Collaborated with policy, QA, and engineering teams to maintain high platform availability and ensure compliance across 10+ device platforms.
 \end{itemize}
 
 \textbf{Micro Focus} \\
 \textit{Cloud Support Engineer – Infrastructure Monitoring} \hfill May 2020 – Apr 2021
 \begin{itemize}
-    \item Supported hybrid cloud monitoring environments by integrating OBM with SiteScope and SMAX.
-    \item Assisted customers in deploying and tuning infrastructure monitoring solutions, helping them track EC2, on-prem Linux, and Windows environments.
-    \item Performed L1/L2 triage, log analysis, and environment troubleshooting within tight SLAs.
-    \item Drove early automation using shell scripts for report extraction and status checks across monitored nodes.
-    \item Built foundational understanding of cloud monitoring, logging and ticket workflows used today in large-scale setups.
+    \item Provided hybrid cloud observability support using OBM, SiteScope, and SMAX integrated with AWS environments.
+    \item Supported enterprises in monitoring EC2, on-prem Linux, and Windows servers; automated alert checks and logs collection via Python and Shell.
+    \item Created internal scripts for status verification and reporting, improving incident response time and reducing MTTR.
+    \item Authored standard operating procedures for onboarding, monitoring setup, and escalation workflows.
 \end{itemize}
 
 \section*{Education}
